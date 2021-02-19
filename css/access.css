@@ -1,0 +1,61 @@
+@-webkit-keyframes blink {
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes blink {
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  body {
+    background-color: #151515;
+    color : wheat;
+    font-family: "Share Tech Mono", monospace;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .password {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+  
+  .granted {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+  }
+  
+  .info {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .info p {
+    margin: 10px;
+  }
+  
+  .blink {
+    -webkit-animation: blink 0.8s steps(1, start) infinite alternate;
+            animation: blink 0.8s steps(1, start) infinite alternate;
+  }
